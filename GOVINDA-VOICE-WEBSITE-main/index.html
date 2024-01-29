@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>VOICE</title>
+</head>
+
+<body>
+    <!-- pop up notification -->
+    <div id="overlay" class="overlay">
+        <div id="popup" class="popup">
+            <button onclick="closePopup()"><img src="images/x.gif" alt=""></button>
+            <p><img src="images/new-icon-gif-2.jpg" alt=""><a href="Bootcamp/index.html">Register of Personality Development Course.</a></p>            
+        </div>
+    </div>
+<!-- main body -->
+    <div class="container" id="content">
+        <div class="header">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links " id="nav-links">
+                <a href="/">Home</a>
+                <a onclick="scrollToSection('as')">About us</a>
+                <a href="#" onclick="scrollToSection('gallery')">Gallery</a>
+                <a href="#" onclick="scrollToSection('test')">Testimonials</a>
+                <a href="#" onclick="scrollToSection('event')">Events</a>
+            </div>
+            <i class="fa fa-bars" id="toggle-bar"></i>
+        </div>
+        <div class="middle-container">
+            <div class="display">
+                <div id="intro">
+                    <p class="logo">
+                        <img src="images/logo1.png" alt="voice_logo">
+                        GOVINDA VOICE
+                    </p>
+                    <p id="title">
+                        HALDIA
+                    </p>
+                    <div id="quote">
+                        <p> Rekindling Wisdom ,Reviving Love</p>
+                    </div>
+                    <!-- <blockquote>
+                <strong>OUR MOTIVATION</strong><br>"In order to create a generation of young Indians equipped to take on future challenges and achieve their full potential, it is necessary that the youth are in good health and make healthy and balanced lifestyle choices. Youth specific health issues must be addressed through targeted programmes. Balanced nutrition and healthy lifestyle information must be provided to the youth. ….. There is also need to create awareness among the youth about ill-effects of drug/ substance abuse. …. It is also important to develop inner values like compassion, kindness, sympathy and empathy. There is also a serious need to inculcate the spirit of integrity and truthfulness in the youth."<span>- National Youth Policy (Current Policies &amp; Future Imperatives – Priority&nbsp;Areas&nbsp;4&nbsp;&amp;&nbsp;6)</span>
+            </blockquote> -->
+                </div>
+            </div>
+            <div class="home-main-panel">
+                <div class="home-left-panel" id="as">
+                    <div id="about">
+                        <h1 class="font">
+                            About Voice
+                        </h1>
+                        <p class="description">
+                            'VOICE' Stands for Vedic Oasis for Inspiration, Culture and Education. It is aimed at
+                            offering services to the modern youth at HALDIA, helping them become better human being.
+                            Every society needs role models which can be emulated by masses. 'GOVINDA VOICE' aims to
+                            nurture individuals who can excel in their personal and professional life. Such individuals
+                            will be leading by principle centered living. VOICE has centers all over India and has
+                            helped 10000+ youth gain spiritual wisdom through activities like mantra meditation,
+                            readings, classes, etc.
+                        </p>
+                    </div>
+                    <div class="highlights">
+                        <h5 class="title">
+                            <Strong>OUR GOAL :</Strong>
+                        </h5>
+                        <h5 class="highlights-items 1">
+                            A stress-free, addiction–free student community @HALDIA with high competence and
+                            wellness.
+                        </h5>
+                    </div>
+                    <div class="highlights">
+                        <h5 class="title">
+                            <Strong>WE PROMOTE :</Strong>
+                        </h5>
+                        <h5 class="highlights-items">
+                            1. Vocational Training &
+                            <br>
+                            Education.
+                        </h5>
+                        <h5 class="highlights-items">
+                            2.Workshoops & Outdoor Events
+
+                        </h5>
+                        <h5 class="highlights-items">
+                            3. Mantra Meditation
+                        </h5>
+                    </div>
+                    <hr>
+                    <div class="social-media-container">
+                        <div class="font" id="gallery">
+                            Gallery
+                        </div>
+                        <div class="image-gallery">
+                            <!-- <div class="gallery-wrap">
+                            <button onclick="prevImage()"><img src="images/back.png" alt="" id="prev"></button>
+                            <div class="gallery" id="imageGallery"></div>
+                            <button onclick="nextImage()"><img src="images/next.png" alt="" id="next"></button>
+                        </div> -->
+                            <div class="gallary-wrap">
+                                <div class="gallery">
+                                    <a href="images/group1.jpg" data-lightbox="models" data-title="Caption1">
+                                        <img src="images/group1.jpg" alt="">
+                                    </a>
+                                    <a href="images/Ayush.jpg" data-lightbox="models" data-title="Caption2">
+                                        <img src="images/Ayush.jpg" alt="">
+                                    </a>
+                                    <a href="images/GS.jpg" data-lightbox="models" data-title="Caption3">
+                                        <img src="images/GS.jpg" alt="">
+                                    </a>
+                                    <a href="images/temple.jpg" data-lightbox="models" data-title="Caption4">
+                                        <img src="images/temple.jpg" alt="">
+                                    </a>
+                                    <a href="images/Prji.jpg" data-lightbox="models" data-title="Caption5">
+                                        <img src="images/Prji.jpg" alt="">
+                                    </a>
+                                    <a href="images/rathyatra.jpg" data-lightbox="models" data-title="Caption6">
+                                        <img src="images/rathyatra.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr id="test">
+
+                    </div>
+                    <!-- <div id="testimonial">
+                    <div class="font testimonial-heading">
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div class="testimonies-carousel carousel slide carousel-dark">
+                        
+                    </div> -->
+                    <div class="people">
+                        <h1 class="font">
+                            Testimonials
+                        </h1>
+                        <div class="testimonial-container">
+                            <div class="indicator">
+                                <span class="btn active"></span>
+                                <span class="btn"></span>
+                                <span class="btn"></span>
+                                <span class="btn"></span>
+                            </div>
+                            <div class="testimonial">
+                                <div class="slide-row" id="slide">
+                                    <div class="slide-col">
+                                        <div class="user-text">
+                                            <p>
+                                                Discussion with mentors and seniors provides much needed clarity one
+                                                requires at that time. It also helps in inculcating Time management
+                                                habits that helps throughout the life.
+                                            </p>
+                                            <h2>
+                                                Ashish Goyal
+                                            </h2>
+                                            <h3>
+                                                B.tech HIT CSE.
+                                                <br>
+                                                M.tech IIT Bombay
+                                                <br>
+                                                Senior Engineer @ FIS
+                                            </h3>
+                                        </div>
+                                        <div class="user-img">
+                                            <img src="images/ashispr2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-col">
+                                        <div class="user-text">
+                                            <p>
+                                                VOICE taught be to be open to discussion, and how to have a holistic
+                                                growth in life. Also time management, stress management, teamwork,
+                                                effective communication, etc. all these lofty principles were easily
+                                                covered in VOICE.
+
+                                            </p>
+                                            <h2>
+                                                Ajay Kumar
+                                            </h2>
+                                            <h3>
+                                                B.tech HIT ME.
+                                                <br>
+                                                M.S IIT Madras
+
+                                            </h3>
+                                        </div>
+                                        <div class="user-img">
+                                            <img src="images/ajaypr.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-col">
+                                        <div class="user-text">
+                                            <p>
+                                                VOICE taught me how to have a SIMPLE LIVING, and HIGH
+                                                THINKING lifestyle. It gave me the priceless and a lifelong genuine
+                                                association of Seniors, friends and well-wishers.
+
+                                            </p>
+                                            <h2>
+                                                Shubham Soni
+                                            </h2>
+                                            <h3>
+                                                B.tech HIT CSE.
+                                                <br>
+                                                SDE @ OpenText
+                                            </h3>
+                                        </div>
+                                        <div class="user-img">
+                                            <img src="images/subhkrishnapr.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide-col">
+                                        <div class="user-text">
+                                            <p>
+                                                The journey of VOICE with a diverse group of people and witnessing their
+                                                transformation first hand, adds different perspective. It also gives you
+                                                an insight into the workings of an organization at an early age
+                                                which is quite unique.
+                                            </p>
+                                            <h2>
+                                                Saurav Kumar
+                                            </h2>
+                                            <h3>
+                                                B.tech HIT CSE.
+                                                <br>
+                                                SDE @ NICE Actimize
+                                            </h3>
+                                        </div>
+                                        <div class="user-img">
+                                            <img src="images/saurav pr.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>                  -->
+                </div>
+                <div class="home-right-panel" id="event">
+                    <div>
+                        <div class="event-container">
+                            <h5>Latest Events</h5>
+                            <hr>
+                            <div class="event-content">
+                                <div>
+                                    <p>
+                                        <a href="DYS/DYS.html" style="color: black;">Click to register for DYS
+                                            Course</a>
+                                    </p>
+                                    <p>
+                                        <a href="Bootcamp/index.html" style="color: black;">Click to register for PDC
+                                            Course</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-container">
+                            <h5>Latest News</h5>
+                            <hr>
+                            <div class="news-content">
+                                <p>
+                                    Govinda VOICE has Launched DYS Course.
+                                    <hr>
+                                </p>
+                                <p>
+                                    Personality Development Course is organized for 1st Years Students.
+                                    <hr>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div>
+                            <h2>OUR ACHIVMENTS</h2>
+                            <hr>
+                            <div>
+                                <h2>
+                                    <span id="1">400</span>
+                                    +
+                                </h2>
+                                <h6>
+                                    Students have taken DYS course along with Holy Name (Hare Krishna Mahamantra)
+                                    <hr>
+                                </h6>
+                            </div>
+                            <div>
+                                <h2>
+                                    <span id="2">0</span>
+                                    +
+                                </h2>
+                                <h6>
+                                    Students Leaders have undergone disciplinary training in VOICE
+                                    <hr>
+                                </h6>
+                            </div>
+                            <div>
+                                <h2>
+                                    <span id="3">4000</span>
+                                    +
+                                </h2>
+                                <h6>
+                                    Students have received Bhagwad Gita
+                                    <hr>
+                                </h6>
+                            </div>
+                            <div>
+                                <h2>
+                                    <span id="4">0</span>
+                                    +
+                                </h2>
+                                <h6>
+                                    Successful years educating youths of HIT Haldia
+                                    <hr>
+                                </h6>
+                            </div>
+                            <div>
+                                <h2>
+                                    <span id="5">0</span>
+                                    +
+                                </h2>
+                                <h6>
+                                    Colleges Network all over India
+                                    <hr>
+                                </h6>
+                            </div>
+                            <div>
+                                <h2>
+                                    <span id="6">0</span>
+                                    +
+                                </h2>
+                                <h6>
+                                    Active Members getting trained in Self Development
+                                    <hr>
+                                </h6>
+
+                            </div>
+                        </div>
+                    </div>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7395.595991608724!2d88.06885110869142!3d22.057321470252717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02f15d1c632d35%3A0xe877a77413cec71!2sGovinda&#39;s%20VOICE!5e0!3m2!1sen!2sin!4v1704109522448!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-column" id="footer-logo">
+                <div>
+                    <img src="https://voicenitjsr.org.in/static/media/voice_logo.d0980aa0c05343b11d05.png" alt="">
+                </div>
+                <div class="copyright">
+                    © Copyright
+                    2024
+                    Govinda VOICE
+                </div>
+            </div>
+
+            <div class="footer-column" id="footer-resources">
+                <h5>RESOURCES</h5>
+                <ul>
+                    <li>
+                        <a href="under_construction.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="under_construction.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="under_construction.html">Q&A Forum</a>
+                    </li>
+                    <li>
+                        <a href="under_construction.html">Members Zone</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column" id="footer-links">
+                <h5>LINKS</h5>
+                <ul>
+                    <li>
+                        <a href="DYS/DYS.html">DYS Course</a>
+                    </li>
+                    <li>
+                        <a href="https://chat.whatsapp.com/BF2TVLgeFQbLCiPUO3lunM" style="color: green;">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <script src="script.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
